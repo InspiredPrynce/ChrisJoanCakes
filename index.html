@@ -53,8 +53,7 @@
                         <span class="section-heading-lower">Cakes and Goodies</span>
                     </h2>
                     <p class="mb-3">At Chris Joan, we bring you a delectable assortment of cakes and goodies, freshly made with love. From moist cakes to irresistible treats, our creations are sure to satisfy your cravings and leave you wanting more.</p>
-                    <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="products.html">Visit Us
-                            Today!</a></div>
+                    <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="store.html">Visit Us Today!</a></div>
                 </div>
             </div>
         </div>
@@ -95,22 +94,21 @@
                             <i class="fa fa-home fa-3x"></i>
                             <div class="mx-4">
                                 <h5 class="mb-0">Visit Us</h5>
-                                <p class="mb-0">Experience a world of culinary delight at our warm and inviting
-                                    location. We look forward to welcoming you!</p>
+                                <p class="mb-0" id="address"></p>
                             </div>
                         </div>
                         <div class="py-3 list-group-item d-flex align-items-center justify-content-start mb-2">
                             <i class="fa fa-phone fa-3x"></i>
                             <div class="mx-4">
                                 <h5 class="mb-0">Call Us</h5>
-                                <p class="mb-0">+123 456 7890</p>
+                                <p class="mb-0" id="phone"></p>
                             </div>
                         </div>
                         <div class="py-3 list-group-item d-flex align-items-center justify-content-start mb-2">
                             <i class="fa fa-envelope fa-3x"></i>
                             <div class="mx-4">
                                 <h5 class="mb-0">Send Us A Message</h5>
-                                <p class="mb-0">hello@cakefactory.com</p>
+                                <p class="mb-0" id="email"></p>
                             </div>
                         </div>
                     </div>
@@ -166,8 +164,18 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
+	<script src="js/aos.js"></script>
+	<script src="js/wow.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/others.js"></script>
+	<script src="js/settings.js"></script>
+	<script>
+		const _email = document.querySelector('#email'),
+			_phone = document.querySelector('#phone'),
+			_address = document.querySelector('#address');
+		_email.textContent = settings.email;
+		_phone.textContent = settings.phone;
+		_address.textContent = settings.address;
+	</script>
 </body>
-
 </html>

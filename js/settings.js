@@ -4,6 +4,6 @@ const settings = {
 
     email: 'chrisjoan@gmail.com',
 
-    address: 'Lorem ipsum dolor sit amet, consectetur.'
+    address: 'Catholic Church of Epiphany, PortHarcourt'
 
 }
